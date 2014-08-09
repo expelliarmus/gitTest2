@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7835B22F1920E86A00560BDC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7835B22E1920E86A00560BDC /* MainViewController.m */; };
+		783634A0191F0BE50031CAEB /* EditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836349F191F0BE50031CAEB /* EditTableViewController.m */; };
 		7836A4C4190E16A700C7DD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7836A4C3190E16A700C7DD65 /* Foundation.framework */; };
 		7836A4C6190E16A700C7DD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7836A4C5190E16A700C7DD65 /* CoreGraphics.framework */; };
 		7836A4C8190E16A700C7DD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7836A4C7190E16A700C7DD65 /* UIKit.framework */; };
@@ -22,6 +24,9 @@
 		7836A4E5190E16A800C7DD65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7836A4C9190E16A700C7DD65 /* CoreData.framework */; };
 		7836A4ED190E16A800C7DD65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7836A4EB190E16A800C7DD65 /* InfoPlist.strings */; };
 		7836A4EF190E16A800C7DD65 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836A4EE190E16A800C7DD65 /* _____Tests.m */; };
+		7836A4FB190E184000C7DD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836A4FA190E184000C7DD65 /* Main.storyboard */; };
+		7836A501190E189B00C7DD65 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836A500190E189B00C7DD65 /* RestaurantsTableViewController.m */; };
+		78DA8C3319176D140053C6BB /* AddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA8C3219176D140053C6BB /* AddTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7835B22D1920E86A00560BDC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7835B22E1920E86A00560BDC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7836349E191F0BE50031CAEB /* EditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
+		7836349F191F0BE50031CAEB /* EditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableViewController.m; sourceTree = "<group>"; };
 		7836A4C0190E16A700C7DD65 /* 长理吃货通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "长理吃货通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7836A4C3190E16A700C7DD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7836A4C5190E16A700C7DD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +62,11 @@
 		7836A4EA190E16A800C7DD65 /* 长理吃货通Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "长理吃货通Tests-Info.plist"; sourceTree = "<group>"; };
 		7836A4EC190E16A800C7DD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7836A4EE190E16A800C7DD65 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		7836A4FA190E184000C7DD65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7836A4FE190E189200C7DD65 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
+		7836A500190E189B00C7DD65 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		78DA8C3119176D140053C6BB /* AddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewController.h; sourceTree = "<group>"; };
+		78DA8C3219176D140053C6BB /* AddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,15 @@
 			children = (
 				7836A4D4190E16A700C7DD65 /* AppDelegate.h */,
 				7836A4D5190E16A700C7DD65 /* AppDelegate.m */,
+				7835B22D1920E86A00560BDC /* MainViewController.h */,
+				7835B22E1920E86A00560BDC /* MainViewController.m */,
+				7836A4FE190E189200C7DD65 /* RestaurantsTableViewController.h */,
+				7836A500190E189B00C7DD65 /* RestaurantsTableViewController.m */,
+				7836349E191F0BE50031CAEB /* EditTableViewController.h */,
+				7836349F191F0BE50031CAEB /* EditTableViewController.m */,
+				7836A4FA190E184000C7DD65 /* Main.storyboard */,
+				78DA8C3119176D140053C6BB /* AddTableViewController.h */,
+				78DA8C3219176D140053C6BB /* AddTableViewController.m */,
 				7836A4DA190E16A700C7DD65 /* Images.xcassets */,
 				7836A4D7190E16A700C7DD65 /* _____.xcdatamodeld */,
 				7836A4CC190E16A700C7DD65 /* Supporting Files */,
@@ -228,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7836A4FB190E184000C7DD65 /* Main.storyboard in Resources */,
 				7836A4D0190E16A700C7DD65 /* InfoPlist.strings in Resources */,
 				7836A4DB190E16A700C7DD65 /* Images.xcassets in Resources */,
 			);
@@ -248,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783634A0191F0BE50031CAEB /* EditTableViewController.m in Sources */,
 				7836A4D6190E16A700C7DD65 /* AppDelegate.m in Sources */,
 				7836A4D9190E16A700C7DD65 /* _____.xcdatamodeld in Sources */,
 				7836A4D2190E16A700C7DD65 /* main.m in Sources */,
+				7835B22F1920E86A00560BDC /* MainViewController.m in Sources */,
+				78DA8C3319176D140053C6BB /* AddTableViewController.m in Sources */,
+				7836A501190E189B00C7DD65 /* RestaurantsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +475,7 @@
 				7836A4F4190E16A800C7DD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7836A4F5190E16A800C7DD65 /* Build configuration list for PBXNativeTarget "长理吃货通Tests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +484,7 @@
 				7836A4F7190E16A800C7DD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
