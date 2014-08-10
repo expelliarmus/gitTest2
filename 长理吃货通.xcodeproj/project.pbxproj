@@ -26,6 +26,7 @@
 		7836A4EF190E16A800C7DD65 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836A4EE190E16A800C7DD65 /* _____Tests.m */; };
 		7836A4FB190E184000C7DD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836A4FA190E184000C7DD65 /* Main.storyboard */; };
 		7836A501190E189B00C7DD65 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7836A500190E189B00C7DD65 /* RestaurantsTableViewController.m */; };
+		7857A40219979E1800CFDA96 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7857A40119979E1700CFDA96 /* Main2.storyboard */; };
 		78DA8C3319176D140053C6BB /* AddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA8C3219176D140053C6BB /* AddTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		7836A4FA190E184000C7DD65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7836A4FE190E189200C7DD65 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
 		7836A500190E189B00C7DD65 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		7857A40119979E1700CFDA96 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		78DA8C3119176D140053C6BB /* AddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewController.h; sourceTree = "<group>"; };
 		78DA8C3219176D140053C6BB /* AddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				7836349E191F0BE50031CAEB /* EditTableViewController.h */,
 				7836349F191F0BE50031CAEB /* EditTableViewController.m */,
 				7836A4FA190E184000C7DD65 /* Main.storyboard */,
+				7857A40119979E1700CFDA96 /* Main2.storyboard */,
 				78DA8C3119176D140053C6BB /* AddTableViewController.h */,
 				78DA8C3219176D140053C6BB /* AddTableViewController.m */,
 				7836A4DA190E16A700C7DD65 /* Images.xcassets */,
@@ -253,6 +256,7 @@
 			files = (
 				7836A4FB190E184000C7DD65 /* Main.storyboard in Resources */,
 				7836A4D0190E16A700C7DD65 /* InfoPlist.strings in Resources */,
+				7857A40219979E1800CFDA96 /* Main2.storyboard in Resources */,
 				7836A4DB190E16A700C7DD65 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

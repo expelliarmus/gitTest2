@@ -111,7 +111,7 @@
         NSManagedObject *restaurant = [self.restaurants objectAtIndex:self.restaurants.count-1];
         NSString *highestRateString = [restaurant valueForKey:@"rate"];
         NSInteger highestRate = [highestRateString integerValue];
-        NSLog(@"%d",highestRate);
+        NSLog(@"%ld",(long)highestRate);
         if (highestRate > 0) {
             NSInteger randomIndex = arc4random() % self.restaurants.count;
             NSInteger weight = arc4random() % highestRate;
