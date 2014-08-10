@@ -18,8 +18,8 @@
 {
     [super viewDidLoad];    
     
-    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeLeft:)];
-    [recognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRight:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
     [self.tableView addGestureRecognizer:recognizer];
     
     
@@ -135,7 +135,7 @@
 }
 
 
-- (void)SwipeLeft:(UISwipeGestureRecognizer *)gestureRecognizer
+- (void)SwipeRight:(UISwipeGestureRecognizer *)gestureRecognizer
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
