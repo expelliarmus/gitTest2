@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface MainViewController : UIViewController <UIActionSheetDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *LocationLabel;

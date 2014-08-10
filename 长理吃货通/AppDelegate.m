@@ -142,4 +142,18 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    NSUInteger orientations = UIInterfaceOrientationMaskPortrait;
+    if (self.screenIsPortraitOnly) {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    else {
+        if(self.window.rootViewController){
+            UIViewController *presentedViewController = [[(UINavigationController *)self.window.rootViewController viewControllers] lastObject];
+            orientations = [presentedViewController supportedInterfaceOrientations];
+        }
+        return orientations;
+    }
+}
 @end

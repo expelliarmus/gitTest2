@@ -27,10 +27,27 @@
     // Do any additional setup after loading the view.
 }
 
+-(void) portraitLock {
+    AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.screenIsPortraitOnly = true;
+}
+
+#pragma mark - interface posiiton
+
+- (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL) shouldAutorotate {
+    return NO;
+}
+
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
+    [self portraitLock];
     self.lastRestaurant = nil;
     self.ResultLabel.text = @"去哪吃？";
     
