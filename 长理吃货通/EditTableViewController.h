@@ -18,7 +18,7 @@
 - (IBAction)save:(UIBarButtonItem *)sender;
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *saveButton;
-
+@property (strong,nonatomic) UITapGestureRecognizer *tapGesture;
 
 
 @end

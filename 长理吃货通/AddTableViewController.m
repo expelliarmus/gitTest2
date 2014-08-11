@@ -25,11 +25,13 @@
     self.rateState = NO;
     
     [self.nameLabel setDelegate:self];
-    
+    [self.nameLabel becomeFirstResponder];    
     UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SwipeRight:)];
     [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
     [self.tableView addGestureRecognizer:recognizer];
+    
 
+    
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     //Eliminate
     // Uncomment the following line to preserve selection between presentations.
@@ -99,10 +101,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void)dismissKeyboard
+{
+    [self.nameLabel endEditing:YES];
+}
+
+
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     self.nameState = NO;
     [self checkState];
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:self.tapGesture];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
@@ -118,6 +128,7 @@
         self.nameState = YES;
         [self checkState];
     }
+    [self.view removeGestureRecognizer:self.tapGesture];
 }
 
 -(void)checkState

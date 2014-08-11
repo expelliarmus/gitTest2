@@ -22,8 +22,9 @@
     [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
     [self.tableView addGestureRecognizer:recognizer];
     
-    
     [self.nameLabel setDelegate:self];
+    [self.nameLabel becomeFirstResponder];
+
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     NSManagedObjectContext *context = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -105,20 +106,17 @@
  // Pass the selected object to the new view controller.
  }
  */
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    UITouch *touch = [[event allTouches] anyObject];
-    
-    if (![[touch view] isKindOfClass:[UITextField class]]) {
-        [self.view endEditing:YES];
-    }
-    [super touchesBegan:touches withEvent:event];
+- (void)dismissKeyboard
+{
+    [self.nameLabel endEditing:YES];
 }
 
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     self.saveButton.enabled = NO;
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:self.tapGesture];
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
@@ -131,6 +129,7 @@
     else {
         self.saveButton.enabled = NO;
     }
+    [self.view removeGestureRecognizer:self.tapGesture];
 
 }
 

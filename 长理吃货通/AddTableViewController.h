@@ -21,5 +21,6 @@
 @property BOOL locationState;
 @property BOOL typeState;
 @property BOOL rateState;
+@property (strong,nonatomic) UITapGestureRecognizer *tapGesture;
 
 @end
